@@ -24,11 +24,11 @@ let x = setInterval(function () {
 
 
   // Output the result in an element with id's
-  document.getElementById("weeks").innerHTML = countweeks.padStart(2,'0');
-  document.getElementById("days").innerHTML = countdays.padStart(2,'0');
-  document.getElementById("hours").innerHTML = counthours.padStart(2,'0');    
-  document.getElementById("minutes").innerHTML = countminutes.padStart(2,'0');
-  document.getElementById("seconds").innerHTML = countseconds.padStart(2,'0');
+  document.getElementById("weeks").innerHTML = countweeks.padStart(2, '0');
+  document.getElementById("days").innerHTML = countdays.padStart(2, '0');
+  document.getElementById("hours").innerHTML = counthours.padStart(2, '0');
+  document.getElementById("minutes").innerHTML = countminutes.padStart(2, '0');
+  document.getElementById("seconds").innerHTML = countseconds.padStart(2, '0');
 
   // If the count down is over, write some text 
   if (distance < 0) {

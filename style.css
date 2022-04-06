@@ -138,7 +138,13 @@ html, body{
 	color: #FFFFFF;
 }
 
-@media screen and (orientation: portrait){
+.right > br {
+	display: block;
+	content: "";
+	margin-top: 0;
+}
+
+@media (orientation: portrait) {
 
 	.container {
 		display: block;
@@ -149,6 +155,7 @@ html, body{
 		width: 100vw;
 	}
 }
+
 @media screen and (max-width: 1280px) {
 	#carpic {
 		width: 345px;
@@ -158,12 +165,31 @@ html, body{
 		font-size: smaller;
 	}
 }
-@media screen and (max-width: 820px){
+
+@media (max-width: 820px) and (orientation: portrait){
 	#button {
 		font-size: 14px;
 		width: 27vw;
 	}
 	#mailadress {
 		width: 36vw;
+	}
+}
+
+@media screen and (max-width: 281px) {
+		#logopic {
+		width: 200px;
+		height: 100px;
+	}
+	#carpic {
+		width: 200px;
+		height: 100px;
+	}
+	#button {
+		font-size: 12px;
+		width: 30vw;
+	}
+	#mailadress {
+		width: 48vw;
 	}
 }
